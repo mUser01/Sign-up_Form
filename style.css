@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.image-section, .form-section {
+    min-height: 100vh;
+    min-width: 500px;
+}
+
+.image-section {
+    flex: 2;
+}
+
+.form-section {
+    flex: 3;
+}
+
+div {
+    border: 2px red dashed;
+}
+
+/* Form-section and form */
+
+.form-section > div {
+    padding-right: 90px;
+    padding-left:40px;
+    padding-right: 20%;
+}
+
+.form-section > div:nth-child(2) {
+    background-color: whitesmoke;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 24vh;
+}
+
+input {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
