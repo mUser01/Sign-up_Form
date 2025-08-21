@@ -8,45 +8,65 @@
 </head>
 <body>
     <div class="image-section">
-
+        <div class="odin">
+            <img src="./images-logos/odin-lined.png" alt="logo">
+            <p>ODIN</p>
+        </div>
+        <div class="background"></div>
+        <div class="credits">
+            <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Hally West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p>
+        </div>
     </div>
     <div class="form-section">
         <div>
             <h2>This is not a real online service! You know you need something like this in your life to help you realize yours deepest dreams.</h2>
             <h2>Sign up <em>now</em> to get started.</h2>
             <br>
+            <br>
             <h2>You know you want to.</h2>
         </div>
         <div>
             <h2>Let's do this!</h2>
             <form action="" method="post">
-                <label for="user_name">User name
-                <input type="text" id="user_name">
-                </label>
+                <div>
+                    <label for="user_name">first name
+                    <input type="text" id="user_name" required>
+                    </label>
+                </div>
 
-                <label for="user_last_name">Last name
-                <input type="text" id="user_last_name">
-                </label>
+                <div>
+                    <label for="user_last_name">last name
+                    <input type="text" id="user_last_name" required>
+                    </label>
+                </div>
 
-                <label for="user_email">Email
-                <input type="email" id="user_email">
-                </label>
+                <div>
+                    <label for="user_email">email
+                    <input type="email" id="user_email" required>
+                    </label>
+                </div>
 
-                <label for="phone_number">Phone number
-                <input type="tel" id="phone_number">
-                </label>
+                <div>
+                    <label for="phone_number">phone number
+                    <input type="tel" id="phone_number" required>
+                    </label>
+                </div>
 
-                <label for="password">Password
-                <input type="password" id="password">
-                </label>
+                <div>
+                    <label for="password">password
+                    <input type="password" id="password" required minlength="8">
+                    </label>
+                </div>
 
-                <label for="confirm_password">Confirm password
-                <input type="password" id="confirm_password">
-                </label>
+                <div>
+                    <label for="confirm_password">confirm password
+                    <input type="password" id="confirm_password" required minlength="8">
+                    </label>
+                </div>
             </form>
         </div>
         <div>
-            <button>Create account</button>
+            <button type="submit">Create account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
