@@ -25,50 +25,39 @@
             <br>
             <h2>You know you want to.</h2>
         </div>
-        <div>
-            <h2>Let's do this!</h2>
-            <form action="" method="post">
+        <form action="" method="post">
+            <div>
+                <div>
+                    <h2>Let's do this!</h2>
+                </div>
                 <div>
                     <label for="user_name">first name
-                    <input type="text" id="user_name" required>
+                    <input type="text" id="user_name" name="user_name" required minlength="1">
                     </label>
-                </div>
-
-                <div>
                     <label for="user_last_name">last name
-                    <input type="text" id="user_last_name" required>
+                    <input type="text" id="user_last_name" name="user_last_name" required minlength="1">
                     </label>
-                </div>
-
-                <div>
                     <label for="user_email">email
-                    <input type="email" id="user_email" required>
+                    <input type="email" id="user_email" name="user_email" required>
                     </label>
-                </div>
-
-                <div>
                     <label for="phone_number">phone number
-                    <input type="tel" id="phone_number" required>
+                    <input type="tel" id="phone_number" name="phone_number" required minlength="12">
                     </label>
-                </div>
-
-                <div>
                     <label for="password">password
-                    <input type="password" id="password" required minlength="8">
+                    <input type="password" id="password" name="password" required minlength="8">
                     </label>
-                </div>
-
-                <div>
                     <label for="confirm_password">confirm password
-                    <input type="password" id="confirm_password" required minlength="8">
+                    <input type="password" id="confirm_password" name="confirm_password" required minlength="8">
                     </label>
                 </div>
-            </form>
-        </div>
-        <div>
+            </div>
+            
             <button type="submit">Create account</button>
+        </form>
+        <div>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>

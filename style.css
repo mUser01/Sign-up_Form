@@ -60,6 +60,7 @@ img {
 }
 
 .credits {
+    margin: 0;
     margin-top: 70%;
     color: white;
     text-align: center;
@@ -87,18 +88,26 @@ img {
     padding-bottom: 6%;
 }
 
-.form-section > div:nth-child(2) {
+.form-section form > div {
     background-color: white;
     padding-top: 18px;
     padding-bottom: 18px;
     color: darkslategray;
-    padding-right: 25%;
     box-shadow: 10px 5px 5px lightgray;
 }
 
-form {
+form > div > div {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 4em;
+    padding-right: 10%;
+}
+
+form > div > div:first-child {
+    margin-bottom: 18px;
+}
+
+form {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 24px;
@@ -108,8 +117,8 @@ label {
     font-size: 14px;
     font-family: "COUTUREBold";
     letter-spacing: 2px;
+    margin-right: 5em;
 }
-
 
 /* INPUT styles */
 
@@ -126,14 +135,12 @@ input {
     font-size: 18px;
 }
 
-input:invalid {
-    border-color: red;
-}
 
 /* Button and link */
 
 button {
     margin: 4% 0;
+    margin-left: 5%;
     padding: 16px 3em;
     color: white;
     font-size: 24px;
